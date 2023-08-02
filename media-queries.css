@@ -1,0 +1,297 @@
+
+/***************** MEADIA QUERIES *****************************/
+
+@media screen and (max-width: 1020px) {
+    .navbar {
+      background-color: var(--PRIMARY-COLOR);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      margin-right: 20px;
+      position: relative;
+  }
+
+  .nav-container .logo {
+    margin-top: -20px;
+  }
+
+  .nav-menu {
+    background-color: var(--PRIMARY-COLOR);
+    position: absolute;
+    flex-direction: column;
+    right: -20px;
+    width: 215px;
+    padding-block: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    top: -800px;
+    transition: 0.3s ease;
+}
+
+.hover-link {
+  padding: 15px ;
+  
+}
+
+    .nav-menu-mobile {
+      display: block;
+      z-index: 1000;
+      height: 140px;
+      width: 300px;
+      margin-right: -100px;
+      margin-top: -40px;
+      padding-right: 50px;
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: var(--PRIMARY-COLOR);
+    }
+
+    .nav-menu-mobile a {
+      width: 135px;
+    }
+
+    .nav-menu-mobile i {
+       color: var(--LIGHT-COLOR);
+       font-size: 25px;
+       cursor: pointer;
+       display: inline-block;
+       z-index: 100;
+    }
+
+    .show-dropdwon-menu {
+      gap: 14px;
+      opacity: 0;
+    }
+
+    /* Show dropdwon menu when active class is added in dropdwon-menu */
+    .nav-menu.active {
+      top: 110px;
+      transition: 0.5s ease;
+    }
+
+    .dropdwon-menu.active {
+      height: 350px;
+    }
+    
+    .dropdwon-menu.active .show-dropdwon-menu {
+      opacity: 1;
+    }
+
+    .download-button {
+      width: 95%;
+      margin-left: 5px;
+    }
+
+    .download-button-mobile {
+      box-shadow: none;
+      padding: 12px 20px;
+      color: #1C1279;
+      font-size: 14px;
+      transform: none!important;
+      border-radius: 5px;
+      z-index: 100;
+
+    }
+
+    .hero-section {
+      width: 100%;
+      height: 90vh;
+      max-height: 100vh;
+      min-height: 600px;
+      background-image: url(https://assets-global.website-files.com/5e4482baa13a1926b23e2187/622687b403d984e14f9eeafa_home%20-%20hero%20\(new\).png);
+      background-position: 80% 100%;
+      background-size: cover;
+    }
+
+    .partner-logos {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card img {
+       top: 12%;
+       width: 300px;
+    }
+
+    .download-section {
+      padding-inline: 35px;
+    }
+
+    .download-container h2, h3{
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+
+    .download-container {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .download-container  .download-app-image{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1, h2 {
+      font-size: 40px !important;
+      line-height: 48px !important;
+    }
+
+    .partner-logos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+.Learn-more-button {
+  width: 300px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.mobile-view {
+  display: block;
+}
+
+.card .desktop-view {
+  display: none;
+}
+
+.card img {
+  max-width: 360px;
+  width: 100%;
+  left: 15%;
+  top: -60px;
+}
+
+.card h3 {
+  line-height: 40px;
+}
+
+.card-2 img {
+  width: 260px;
+}
+
+.item {
+  width: 100%;
+  max-width: 100%;
+  padding-right:0;
+  padding-top: 100px;
+}
+
+.card h3 {
+  margin-top: 150px;
+}
+
+.card-3 img {
+  height: auto;
+  max-width: 460px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.card-3 h3  {
+  margin-top: 250px;
+}
+
+.howitworks-section .card  {
+  box-shadow: none;
+}
+
+.download-section {
+  height: 900px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.download-container  .download-app-image{
+  display: inline-block;
+  position: relative;
+  margin-top: 100px;
+}
+
+.footer-links {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.footer-link-col {
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-block: 0;
+}
+
+}
+
+@media screen and (max-width: 560px) {
+
+  .navbar .logo img {
+    width: 160px;
+  }
+
+  .partner-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .howitworks-section .card {
+    padding: 50px 30px 80px;
+  }
+
+  .card .item h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .card-1 .item h3{
+    margin-top: 50px;
+  }
+
+  .card-3 .item h3{
+    margin-top: 120px;
+  }
+
+  .card img {
+    width: 260px;
+  }
+
+  .card-3 img {
+    width: 300px;
+  }
+
+  .download-section {
+    height: 750px;
+  }
+  
+  .footer {
+    padding-inline: 20px;
+  }
+
+  .footer-photos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+.footer-content {
+  gap: 40px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3fr;
+}
+
+.footer-container {
+  padding-inline:0 ;
+  padding-top: 80px;
+}
+
+.footer-location p{
+   width: 250px;
+}
+
+.footer-link-col a{
+  font-size: 15px;
+}
+}
+

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flashfood</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons link -->
+    <link rel="stylesheet" href="media-queries.css" />
+
+    <script
+      src="https://kit.fontawesome.com/f5c8e13b2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- || NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="container flex nav-container">
+        <a href="#" class="logo">
+          <img
+            src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/5e73b9a76a448d16c1d65d34_logo_white.svg"
+            alt="flashfood"
+          />
+        </a>
+        <div class="nav-menu flex">
+          <a class="hover-link" href="#howitworks">HOW IT WORKS</a>
+          <a class="hover-link" href="#location">LOCATIONS</a>
+          <div
+            class="dropdwon-menu"
+            onmouseover="showMenu(this)"
+            onmouseout="hideMenu(this)"
+          >
+            <a href="#about" class="nowrap hover-link flex"
+              >ABOUT <span><i class="fa-solid fa-angle-down"></i></span
+            ></a>
+
+            <div class="show-dropdwon-menu flex">
+              <a class="hover-link" href="#">OUR STORY</a>
+              <a class="hover-link" href="#">FOOD WASTE</a>
+              <a class="hover-link" href="#">THE TEAM</a>
+              <a class="hover-link" href="#">PRESS ROOM</a>
+              <a class="hover-link" href="#">IMPACT REPORT</a>
+            </div>
+          </div>
+          <a class="hover-link" href="#">SUPPORT</a>
+          <a class="hover-link" href="#">PARTNER</a>
+          <a href="#download-app" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="nav-menu-mobile flex">
+          <a href="#" class="download-button download-button-mobile"
+            >DOWNLOAD</a
+          >
+          <span class="nav-menu-toggle"> <i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-spacer"></div>
+
+    <!-- || LANGUAGE POPUP MENU -->
+    <div
+      class="lang-popup flex"
+      onmouseover="showMenu(this)"
+      onmouseout="hideMenu(this)"
+    >
+      <div class="lang-menu hide">FR (CA)</div>
+
+      <div class="lang-en hide flex">
+        <img src="assets/asset 45.svg" alt="" />
+        <a href="#" class="nowrap">EN</a>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+
+    <!-- || MAIN -->
+    <main>
+      <!-- Hero section -->
+      <section class="home hero-section">
+        <header class="container">
+          <div class="hero-container">
+            <h1>Save money and fight against food waste</h1>
+            <p>
+              Get massive savings on fresh food items like meat and produce that
+              are nearing their best before date at grocery stores across Canada
+              and the U.S.
+            </p>
+            <div class="appstore-links flex">
+              <a href="#"><img src="assets/asset 0.svg" alt="" /></a>
+              <a href="#"><img src="assets/asset 1.svg" alt="" /></a>
+              <a class="hover-link how-it-works nowrap" href="#"
+                >HOW IT WORKS <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <!-- Maxframe section -->
+      <section class="maxframe-section flex">
+        <div class="companies-section flex container">
+          <div class="partner-logos">
+            <div class="logo">
+              <img src="assets/asset 4.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 5.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 6.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 7.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 8.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 9.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 10.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 11.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 12.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 13.png" alt="company logo" />
+            </div>
+          </div>
+          <div class="partner-logos more-partner-logos hide">
+            <div class="logo">
+              <img src="assets/asset 14.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 15.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 16.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 17.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 18.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 19.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 20.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 21.png" alt="company logo" />
+            </div>
+            <div class="logo">
+              <img src="assets/asset 23.png" alt="company logo" />
+            </div>
+          </div>
+          <button class="show-more-button">See more</button>
+        </div>
+
+        <div class="learn-more flex container">
+          <p>Are you a grocery chain that wants to work with Flashfood?</p>
+          <a href="#" class="download-button Learn-more-button">LEARN MORE</a>
+        </div>
+
+        <!-- How it works section-->
+        <section id="howitworks" class="howitworks-section flex container">
+          <h2>How it works</h2>
+
+          <div class="card card-1 flex">
+            <div class="item">
+              <h3>
+                First, use the free app to quickly and easily find discounted
+                food from wherever you are.
+              </h3>
+              <ul>
+                <li>
+                  Browse deals of up to 50% off at a grocery store location near
+                  you. <a href="#" class="see-location">See Locations ></a>
+                </li>
+                <li>Choose your discounted food items.</li>
+                <li>
+                  Pay right in the app using any major credit card, VISA debit
+                  card, or SNAP EBT card.
+                </li>
+              </ul>
+            </div>
+
+            <img class="mobile-view" src="assets/asset 24.png" alt="location" />
+            <img
+              class="desktop-view"
+              src="assets/asset 25.png"
+              alt="location"
+            />
+          </div>
+
+          <div class="card card-2 flex">
+            <div class="item">
+              <h3>Then, pick up your Flashfood order at the grocery store.</h3>
+              <p>
+                Head to the store, grab your food items from the Flashfood zone,
+                and quickly confirm your order with the customer service desk.
+              </p>
+            </div>
+
+            <img src="assets/asset 27.png" alt="location" />
+          </div>
+
+          <div class="card card-3 flex">
+            <div class="item">
+              <h3>
+                Finally, enjoy good food, a great deal, and the good deed - you
+                just saved some food from the landfill!
+              </h3>
+              <a href="#" class="see-location"
+                >Learn more about Food Waste
+                <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+
+            <img src="assets/asset 29.png" alt="location" />
+          </div>
+        </section>
+
+        <!-- Testimonial section -->
+        <section class="testimonial-section container flex">
+          <h2>
+            We’ve helped thousands of people save money on their groceries
+          </h2>
+          <div class="testimonial-cards flex">
+            <div class="testimonial-card testimonial-card-1 flex">
+              <img src="assets/asset 30.svg" alt="" />
+              <img class="stars" src="assets/asset 31.svg" alt="" />
+              <p class="testimonial-text">
+                Another day and another box of fruit bought off the Flashfood
+                app! I love using this app and keeping perfectly good food from
+                going into the landfill. All of the food posted on the app is
+                reaching its best before date but still perfectly good to eat.
+                And it was only $5.00! 😊
+              </p>
+              <h4 class="testimonial-quote">
+                @ ACELIACSTRAVELS FROM AIRDRIE, ALBERTA
+              </h4>
+            </div>
+            <div class="testimonial-card testimonial-card-1 flex">
+              <img src="assets/asset 30.svg" alt="" />
+              <img class="stars" src="assets/asset 31.svg" alt="" />
+              <p class="testimonial-text">
+                I despise wasting food, and I love getting a great deal.
+                flashfood makes it so simple for me to actually save food
+                destined for the dump, and all they ask is that I pay a fraction
+                of the price for it. In my personal opinion, the food is fine!
+                No issues whatsoever! In what world does this service not make
+                perfect sense?
+              </p>
+              <h4 class="testimonial-quote">PETER T. FROM TORONTO</h4>
+            </div>
+            <div class="testimonial-card testimonial-card-1 flex">
+              <img src="assets/asset 30.svg" alt="" />
+              <img class="stars" src="assets/asset 31.svg" alt="" />
+              <p class="testimonial-text">
+                Wow! I am absolutely delighted with my first box! A great
+                selection of produce (carrots, English cucumber, peppers,
+                mushrooms, onions, apples, oranges and the protein (kielbasa,
+                chicken meatballs, teriyaki chicken meatballs, pulled chicken)
+                was awesome as well! Will most certainly order again!
+              </p>
+              <h4 class="testimonial-quote">
+                PAULINE P. FROM WYANDOTTE, MICHIGAN
+              </h4>
+            </div>
+            <div class="testimonial-card testimonial-card-1 flex">
+              <img src="assets/asset 30.svg" alt="" />
+              <img class="stars" src="assets/asset 31.svg" alt="" />
+              <p class="testimonial-text">
+                Love it. between the wife and I who have the app on both our
+                phones, we saved over $1200. instead of stores throwing out
+                expired food to the dump, they can get rid of food when it's
+                close to expiration dates. love it. I highly recommend it.
+              </p>
+              <h4 class="testimonial-quote">BRETT C. FROM AJAX</h4>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Download our app section -->
+      <section class="download-section">
+        <div class="container download-container">
+          <div class="download-content-wraper flex">
+            <h3>ARE YOU READY?</h3>
+            <h2>Download the free app and save money on groceries now</h2>
+            <div class="appstore-links flex">
+              <a href="#"><img src="assets/asset 0.svg" alt="" /></a>
+              <a href="#"><img src="assets/asset 1.svg" alt="" /></a>
+            </div>
+          </div>
+          <img class="download-app-image" src="assets/asset 34.jpeg" alt="" />
+        </div>
+        <img class="download-bottom-bg-img" src="assets/asset 33.png" alt="" />
+      </section>
+    </main>
+
+    <!-- || FOOTER -->
+    <footer class="footer">
+      <div class="footer-container container flex">
+        <p class="follow-us">FOLLOW @FLASHFOOD</p>
+
+        <div class="footer-photos">
+          <img src="assets/asset 35.jpeg" alt="" />
+          <img src="assets/asset 36.jpeg" alt="" />
+          <img src="assets/asset 37.jpeg" alt="" />
+          <img src="assets/asset 38.jpeg" alt="" />
+          <img src="assets/asset 39.jpeg" alt="" />
+        </div>
+
+        <div id="location" class="footer-content">
+          <div class="footer-location flex">
+            <img src="assets/asset 40.svg" alt="" />
+            <p>
+              Find Flashfood near you <i class="fa-solid fa-arrow-right"></i>
+            </p>
+            <div class="social-media-links flex">
+              <a href="#"><img src="assets/asset 42.svg" alt="" /></a>
+              <a href="#"><img src="assets/asset 43.svg" alt="" /></a>
+              <a href="#"><img src="assets/asset 44.svg" alt="" /></a>
+            </div>
+          </div>
+          <img class="location-bg-image" src="assets/asset 41.svg" alt="" />
+
+          <div class="footer-links">
+            <div class="footer-link-col flex">
+              <a href="#">THE TEAM</a>
+              <a href="#">LOCATIONS</a>
+              <a href="#">OUR STORY</a>
+              <a href="#"> FOOD WASTE</a>
+            </div>
+            <div class="footer-link-col flex">
+              <a href="#">NEWS</a>
+              <a href="#">BLOG</a>
+              <a href="#">REFER A FRIEND</a>
+            </div>
+            <div class="footer-link-col flex">
+              <a href="#">PARTNER</a>
+              <a href="#">CAREERS</a>
+              <a href="#">SUPPORT</a>
+              <a href="#">CONTACT US</a>
+            </div>
+            <div class="footer-link-col flex">
+              <a href="#">TERMS OF USE</a>
+              <a href="#">PRIVACY POLICY</a>
+              <a href="#">SUPPLIER DIVERSITY POLICY</a>
+              <a href="#">RESPONSIBLE DISCLOSURE</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer-copyrights">
+          &copy; Flashfood Inc. 2023. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
